@@ -28,25 +28,21 @@ suddenly, traders could price european options in **microseconds** making modern
 
 ## 📐 the black-scholes formula
 
-### call option:
-
-\[
+### Call Option
+$$
 C = S_0 \cdot N(d_1) - K e^{-rT} \cdot N(d_2)
-\]
+$$
 
-### put option:
-
-\[
+### Put Option
+$$
 P = K e^{-rT} \cdot N(-d_2) - S_0 \cdot N(-d_1)
-\]
+$$
 
-### where:
-
-\[
-d_1 = \frac{\ln(S_0/K) + (r + \frac{\sigma^2}{2})T}{\sigma \sqrt{T}}, 
-\quad
+### Where:
+$$
+d_1 = \frac{\ln(S_0/K) + (r + \frac{\sigma^2}{2})T}{\sigma \sqrt{T}}, \quad
 d_2 = d_1 - \sigma \sqrt{T}
-\]
+$$
 
 
 ---
